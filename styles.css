@@ -1,0 +1,42 @@
+/* Example of CSS animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-section h1 {
+    animation: fadeIn 2s ease;
+}
+
+@font-face {
+    font-family: 'Super Foods';
+    src: url('super-foods.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Pastikan CSS ini ditambahkan ke dalam stylesheet Anda */
+ul.hidden.md\\:flex.space-x-6.font-semibold li a {
+    position: relative;
+    text-decoration: none; /* Menghilangkan garis bawah default */
+    color: white; /* Mengatur warna teks sesuai kebutuhan */
+}
+
+ul.hidden.md\\:flex.space-x-6.font-semibold li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Atur ketebalan garis sesuai kebutuhan */
+    bottom: -3px; /* Jarak antara teks dan garis */
+    left: 0;
+    background-color: yellow; /* Warna garis */
+    transition: width 0.3s ease; /* Transisi untuk efek hover */
+}
+
+ul.hidden.md\\:flex.space-x-6.font-semibold li a:hover::after {
+    width: 100%; /* Garis akan muncul sepanjang tautan saat hover */
+}
