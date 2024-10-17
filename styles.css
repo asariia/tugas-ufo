@@ -39,4 +39,5 @@ ul.hidden.md\\:flex.space-x-6.font-semibold li a::after {
 
 ul.hidden.md\\:flex.space-x-6.font-semibold li a:hover::after {
     width: 100%; /* Garis akan muncul sepanjang tautan saat hover */
+    height: auto;
 }
